@@ -71,6 +71,9 @@ class SpoonBoyReportPackPlugin extends Plugin {
         // cypher password access
         this.registerProvider(new CypherPasswordAccessReportProvider(this,this.morpheus))
 
+        // Register the new VMConsoleAccessReportProvider
+        this.registerProvider(new VMConsoleAccessReportProvider(this, this.morpheus))
+
     }
 
     /**
